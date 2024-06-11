@@ -1,0 +1,79 @@
+@import url(global.css);
+
+/* Apply background overlay to the entire webpage */
+body {
+  position: relative;
+}
+
+/* Add a class to the body when the signup box is open */
+body.signup-open {
+  overflow: hidden; /* Hide scrollbars when the signup box is open */
+}
+
+/* Style the overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value to control the opacity */
+   z-index: 9999; /*Make sure the overlay appears above other elements */
+}
+
+.signup-box {
+  text-align: center;
+  margin: 0 auto; /* Center the signup box horizontally */
+  padding: 20px;
+  width: 300px;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  background-color: #f6f8fa;
+  position: absolute;
+  top: 50%; /* Center the signup box vertically */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Adjust to perfectly center the box */
+}
+
+.signup-box h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.signup-box input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+}
+
+.signup-box button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.signup-box .close-button {
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: #999;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-box .close-button:hover {
+  color: #666;
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Canva+Sans&display=swap');
+
+body {
+  background-image: url('/public/images/home-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.main-container {
+  
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+
+.left-div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideInLeft 1000ms forwards, fadeOutLeft 800ms forwards 300ms;
+}
+
+.right-div {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 90px;
+}
+
+.content {
+  padding: 20px 235px 20px 0px;
+  color: #f2f5f6;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: normal;
+  padding-top: 50px;
+  animation: slideInLeft 1000ms forwards, fadeOutLeft 800ms forwards 300ms;
+}
+
+.content p {
+  margin-top: 90px;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: 'League Spartan', sans-serif;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-shadow: 0px 2px 0px rgba(255, 255, 255, .4);
+  font-weight: bold;
+  animation: slideInLeft 1000ms forwards, fadeOutLeft 800ms forwards 500ms;
+}
+
+button {
+  font-family: 'Canva Sans', sans-serif;
+  font-weight: bold;
+}
+
+.buttons button {
+  margin-right: 30px;
+  margin-top: 30px;
+  background-color: #f2f5f6;
+  width: 120px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  animation: slideInLeft 1000ms forwards, fadeOutLeft 800ms forwards 700ms;
+}
+
+.try-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  width: auto;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background-color: #8b7e74;
+  color: #000;
+  cursor: pointer;
+  animation: slideInLeft 1000ms forwards, fadeOutLeft 800ms forwards 900ms;
+}
+
+/* Animation keyframes */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

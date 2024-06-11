@@ -1,0 +1,13 @@
+{
+    "Motor vehicle": [
+      { "name": "Subcategory 1", "background": "/path/to/subcategory1.jpg" },
+      { "name": "Subcategory 2", "background": "/path/to/subcategory2.jpg" },
+      { "name": "Subcategory 3", "background": "/path/to/subcategory3.jpg" }
+    ],
+    "Cyber security": [
+      { "name": "Subcategory A", "background": "/path/to/subcategoryA.jpg" },
+      { "name": "Subcategory B", "background": "/path/to/subcategoryB.jpg" }
+    ]
+    
+  }
+  
